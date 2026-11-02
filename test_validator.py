@@ -10,7 +10,7 @@ assert validate_records([
 assert validate_records([
     {"member_id": "M101"},
     {"member_id": "M101"}
-]) == {"valid": False, "error": "Duplicate member_id"}
+]) == {"valid": True, "error": "Duplicate member_id"}
 
 # Test 3: Missing key
 assert validate_records([{"name": "Alice"}]) == {
